@@ -1,0 +1,334 @@
+{
+	"info": {
+		"_postman_id": "9a12e4fc-925b-4915-a27d-bf37bdbb2d17",
+		"name": "Bakery_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21277482"
+	},
+	"item": [
+		{
+			"name": "Chefs",
+			"item": [
+				{
+					"name": "chef",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.airtable.com/v0/appXMW3ZsAddTpClm/chef",
+							"protocol": "https",
+							"host": [
+								"api",
+								"airtable",
+								"com"
+							],
+							"path": [
+								"v0",
+								"appXMW3ZsAddTpClm",
+								"chef"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "specific chef",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.airtable.com/v0/appXMW3ZsAddTpClm/chef?filterByFormula=id=\"548D6542-CD4E-4133-9F1D-F44A3C14F578\"",
+							"protocol": "https",
+							"host": [
+								"api",
+								"airtable",
+								"com"
+							],
+							"path": [
+								"v0",
+								"appXMW3ZsAddTpClm",
+								"chef"
+							],
+							"query": [
+								{
+									"key": "filterByFormula",
+									"value": "id=\"548D6542-CD4E-4133-9F1D-F44A3C14F578\""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "user",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.airtable.com/v0/appXMW3ZsAddTpClm/user",
+							"protocol": "https",
+							"host": [
+								"api",
+								"airtable",
+								"com"
+							],
+							"path": [
+								"v0",
+								"appXMW3ZsAddTpClm",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "specific user",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fields\": {\n        \"id\": \"04AE7129-7AF9-4F20-A7D6-1E79B1F32E53\",\n        \"name\": \"Paris Hunttttt 🚀🚀🚀\",\n        \"email\": \"paris@hunt.com\",\n        \"password\": \"paris@hunt.com\"\n    }\n}"
+						},
+						"url": {
+							"raw": "https://api.airtable.com/v0/appXMW3ZsAddTpClm/user/rec0zyLMcxfhT3cDh",
+							"protocol": "https",
+							"host": [
+								"api",
+								"airtable",
+								"com"
+							],
+							"path": [
+								"v0",
+								"appXMW3ZsAddTpClm",
+								"user",
+								"rec0zyLMcxfhT3cDh"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Courses",
+			"item": [
+				{
+					"name": "course",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.airtable.com/v0/appXMW3ZsAddTpClm/course",
+							"protocol": "https",
+							"host": [
+								"api",
+								"airtable",
+								"com"
+							],
+							"path": [
+								"v0",
+								"appXMW3ZsAddTpClm",
+								"course"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "specific course",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.airtable.com/v0/appXMW3ZsAddTpClm/course?filterByFormula=id=\"8CC4D2BB-B7CF-4048-8694-8FEB72B22D29\"",
+							"protocol": "https",
+							"host": [
+								"api",
+								"airtable",
+								"com"
+							],
+							"path": [
+								"v0",
+								"appXMW3ZsAddTpClm",
+								"course"
+							],
+							"query": [
+								{
+									"key": "filterByFormula",
+									"value": "id=\"8CC4D2BB-B7CF-4048-8694-8FEB72B22D29\""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bookings",
+			"item": [
+				{
+					"name": "booking",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.airtable.com/v0/appXMW3ZsAddTpClm/booking",
+							"protocol": "https",
+							"host": [
+								"api",
+								"airtable",
+								"com"
+							],
+							"path": [
+								"v0",
+								"appXMW3ZsAddTpClm",
+								"booking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "booking",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fields\": {\n        \"course_id\": \"rec1DauP3kw5Q76oo\",\n        \"user_id\": \"hiii\",\n        \"status\": \"Pending\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.airtable.com/v0/appXMW3ZsAddTpClm/booking",
+							"protocol": "https",
+							"host": [
+								"api",
+								"airtable",
+								"com"
+							],
+							"path": [
+								"v0",
+								"appXMW3ZsAddTpClm",
+								"booking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "booking",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fields\": {\n        \"course_id\": \"rec1DauP3kw5Q76oo\",\n        \"user_id\": \"hiii\",\n        \"status\": \"Pending\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.airtable.com/v0/appXMW3ZsAddTpClm/booking/rec0cTuNAqazHEN9T",
+							"protocol": "https",
+							"host": [
+								"api",
+								"airtable",
+								"com"
+							],
+							"path": [
+								"v0",
+								"appXMW3ZsAddTpClm",
+								"booking",
+								"rec0cTuNAqazHEN9T"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "Bearer pat7E88yW3dgzlY61.2b7d03863aca9f1262dcb772f7728bd157e695799b43c7392d5faf4f52fcb001"
+		}
+	]
+}
